@@ -105,9 +105,10 @@ const LeftSide = styled.div`
   grid-template-rows: repeat(9, 1fr);
 
   @media (max-width: 768px) {
-    display: flex;
+    height: auto;
+    /* display: flex;
     flex: 1;
-    gap: 0.5rem;
+    gap: 0.5rem; */
     padding: 1rem;
     padding-top: 5rem;
   }
@@ -196,6 +197,7 @@ const RightSide = styled.div`
     transform: translate(-50%, -50%);
 
     @media (max-width: 768px) {
+      display: none;
       flex: 1;
       width: 60%;
       min-width: 100px;
@@ -253,7 +255,7 @@ const RightSide = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex: 1;
+    display: none;
 
     .shape1,
     .shape2,
