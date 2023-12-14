@@ -112,12 +112,12 @@ const Content = styled.div`
     }
 
     p {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       text-align: center;
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 2rem;
       text-align: center;
     }
   }
