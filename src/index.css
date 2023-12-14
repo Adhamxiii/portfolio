@@ -29,4 +29,8 @@ a {
     scroll-snap-type: none;
     scroll-snap-align: none;
   }
+  
+  .section{
+    height: auto;
+  }
 }
