@@ -132,7 +132,7 @@ const TextContainer = styled.div`
     margin-bottom: 1rem;
 
     @media (max-width: 768px) {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -197,7 +197,7 @@ const RightSide = styled.div`
 
     @media (max-width: 768px) {
       flex: 1;
-      width: 70%;
+      width: 60%;
       min-width: 100px;
       height: auto;
       left: 50%;

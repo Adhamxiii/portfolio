@@ -113,9 +113,9 @@ const Content = styled.div`
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: .8rem;
       text-align: center;
-      line-height: 1;
+      line-height: 1.5;
     }
 
     h1 {
@@ -126,10 +126,9 @@ const Content = styled.div`
 `;
 
 const JobContainer = styled.div`
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-bottom: 1rem;
   padding: 1.7rem;
-  background-color: #fff;
 `;
 
 export default Jobs;
