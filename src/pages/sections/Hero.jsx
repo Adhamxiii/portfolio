@@ -107,9 +107,9 @@ const LeftSide = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    /* display: flex;
+    display: flex;
     flex: 1;
-    gap: 0.5rem; */
+    gap: 0.5rem;
     padding: 1rem;
     padding-top: 5rem;
   }
@@ -201,6 +201,12 @@ const RightSide = styled.div`
     left: 1%;
     transform: translate(-50%, -50%);
 
+    @media (max-width: 1300px) {
+      flex: 1;
+      left: 50%;
+      width: 20rem;
+    }
+
     @media (max-width: 768px) {
       display: none;
       flex: 1;
@@ -259,7 +265,25 @@ const RightSide = styled.div`
     height: 290px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    .shape1,
+    .shape2,
+    .shape3,
+    .shape4,
+    .shape5 {
+      display: none;
+    }
+
+    .rounded-frame {
+      flex: 1;
+      top: 60%;
+      left: 60%;
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  @media (max-width: 780px) {
     display: none;
 
     .shape1,
