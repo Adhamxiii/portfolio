@@ -59,24 +59,24 @@ const Connect = () => {
 };
 
 const Wrapper = styled.section`
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    height: auto;
+  }
 `;
 
 const Content = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 2.5rem;
   width: 100%;
-
-  @media (min-width: 768px) {
-    justify-content: space-between;
-  }
+  height: 100vh;
 `;
 
 const TextContainer = styled.div`

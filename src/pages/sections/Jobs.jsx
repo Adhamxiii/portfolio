@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../../components/Header";
-import { motion } from "framer-motion";
 
 const Jobs = () => {
   return (
@@ -10,38 +9,28 @@ const Jobs = () => {
       <div className="container">
         <Content>
           <div className="Engineering">
-            <motion.div
-              animate={{ x: 100 }}
-              transition={{ ease: "easeOut", duration: 2 }}
-            >
-              <JobContainer>
-                <h1>Engineering</h1>
-                <p>
-                  In React development, I use the right tools, but I'm not tied
-                  to them. I create fast, resilient solutions that scale
-                  well—performance and scalability are always top priorities for
-                  me.
-                </p>
-              </JobContainer>
-            </motion.div>
+            <JobContainer>
+              <h1>Engineering</h1>
+              <p>
+                In React development, I use the right tools, but I'm not tied to
+                them. I create fast, resilient solutions that scale
+                well—performance and scalability are always top priorities for
+                me.
+              </p>
+            </JobContainer>
           </div>
           <div className="design">
-            <motion.div
-              animate={{ x: -100 }}
-              transition={{ ease: "easeOut", duration: 2 }}
-            >
-              <JobContainer>
-                <h1>Design</h1>
-                <p>
-                  I'm not your typical designer with an Illustrator canvas.
-                  Instead of pixel perfection, I'm into coding—playing with
-                  stylesheets, toying with fonts, and crafting layouts. My real
-                  passion? It's coding sprinkled with a bit of design magic. I
-                  create websites that not only work seamlessly but also look
-                  pretty darn cool.
-                </p>
-              </JobContainer>
-            </motion.div>
+            <JobContainer>
+              <h1>Design</h1>
+              <p>
+                I'm not your typical designer with an Illustrator canvas.
+                Instead of pixel perfection, I'm into coding—playing with
+                stylesheets, toying with fonts, and crafting layouts. My real
+                passion? It's coding sprinkled with a bit of design magic. I
+                create websites that not only work seamlessly but also look
+                pretty darn cool.
+              </p>
+            </JobContainer>
           </div>
         </Content>
       </div>
@@ -53,7 +42,11 @@ const Wrapper = styled.section`
   .container {
     margin: 0 auto;
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0 1rem;
   }
 
@@ -63,14 +56,17 @@ const Wrapper = styled.section`
     .container {
       padding: 0;
     }
+
+    Header {
+      display: none;
+    }
   }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 90%;
   padding: 4.5rem;
   gap: 2rem;
 
@@ -101,14 +97,18 @@ const Content = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
     padding: 2rem;
 
     .design {
       justify-content: center;
+      transform: none;
     }
 
     .Engineering {
       justify-content: center;
+      transform: none;
     }
 
     p {

@@ -5,7 +5,6 @@ import Header from "../../components/Header";
 const Quote = () => {
   return (
     <Wrapper className="section">
-      <Header />
       <QuoteSection>
         <QuoteBody>
           <QuoteText>A goal without a plan is just a wish.</QuoteText>
@@ -63,6 +62,12 @@ const QuoteBody = styled.div`
   @media (max-width: 768px) {
     font-size: 0.8rem;
 
+    &::before,
+    &::after {
+      width: 50px;
+      height: 50px;
+    }
+
     &::before {
       left: 50%;
       transform: translate(-50%, -50%);
@@ -80,8 +85,8 @@ const QuoteText = styled.p`
   line-height: 1.5;
   color: #1c1c1c;
 
-  span {
-    font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
   }
 `;
 

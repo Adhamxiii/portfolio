@@ -20,7 +20,9 @@ const ProjectsList = () => {
             <ProjectDetails>
               <h3>{title}</h3>
               <p>{description}</p>
-              <Button href={link}>View Project</Button>
+              <Button>
+                <a href={link}>View Project</a>
+              </Button>
             </ProjectDetails>
           </ProjectContainer>
         );
