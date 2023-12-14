@@ -100,20 +100,18 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    padding: 2rem;
+    padding: 1rem;
 
     .design {
       justify-content: center;
-      transform: none;
     }
 
     .Engineering {
       justify-content: center;
-      transform: none;
     }
 
     p {
-      font-size: .8rem;
+      font-size: 0.8rem;
       text-align: center;
       line-height: 1.5;
     }
@@ -126,9 +124,13 @@ const Content = styled.div`
 `;
 
 const JobContainer = styled.div`
-  /* max-width: 600px; */
+  max-width: 600px;
   margin-bottom: 1rem;
   padding: 1.7rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 export default Jobs;
