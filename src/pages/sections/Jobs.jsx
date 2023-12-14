@@ -55,6 +55,7 @@ const Wrapper = styled.section`
 
     .container {
       padding: 0;
+      height: auto;
     }
 
     Header {
@@ -114,6 +115,7 @@ const Content = styled.div`
     p {
       font-size: 1.5rem;
       text-align: center;
+      line-height: 1;
     }
 
     h1 {
