@@ -283,7 +283,7 @@ const RightSide = styled.div`
     }
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 940px) {
     display: none;
 
     .shape1,
