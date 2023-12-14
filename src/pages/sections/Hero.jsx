@@ -92,6 +92,7 @@ const MainContent = styled.main`
   position: relative;
 
   @media (max-width: 768px) {
+    height: auto;
     flex-direction: column;
   }
 `;
