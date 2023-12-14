@@ -127,25 +127,25 @@ const TextContainer = styled.div`
   h1 {
     font-family: "Montserrat", sans-serif;
     color: #d62e1f;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     margin-bottom: 1rem;
 
     @media (max-width: 768px) {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 
   p {
     font-family: "Roboto", sans-serif;
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 6rem;
 
     @media (max-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-bottom: 3rem;
     }
   }
@@ -159,6 +159,11 @@ const TextContainer = styled.div`
     font-size: 1rem;
     width: 50%;
     margin-bottom: 0;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
   }
 `;
 
