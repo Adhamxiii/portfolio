@@ -139,6 +139,11 @@ const FooterInfo = styled.div`
     font-size: 1rem;
     color: #666;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 const SocialMediaLinks = styled.ul`
