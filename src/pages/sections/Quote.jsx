@@ -60,12 +60,11 @@ const QuoteBody = styled.div`
   }
 
   @media (max-width: 768px) {
-    font-size: 0.8rem;
 
     &::before,
     &::after {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
     }
 
     &::before {

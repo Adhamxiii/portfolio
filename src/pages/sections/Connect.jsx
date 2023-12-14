@@ -77,6 +77,10 @@ const Content = styled.div`
   padding: 2.5rem;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -97,6 +101,8 @@ const TextContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 100%;
+
     h1 {
       font-size: 2rem;
     }

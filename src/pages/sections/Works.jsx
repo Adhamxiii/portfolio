@@ -107,7 +107,7 @@ const ProjectsContainer = styled.div`
   flex: 3;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
 `;
 
 const ButtonContainer = styled.div`
