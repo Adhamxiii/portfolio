@@ -99,11 +99,11 @@ const MainContent = styled.main`
 
 const LeftSide = styled.div`
   flex: 7;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #1c1c1c;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 
   @media (max-width: 768px) {
     height: auto;
@@ -117,8 +117,12 @@ const LeftSide = styled.div`
 
 const TextContainer = styled.div`
   grid-column: 1 / span 3;
-  grid-row: 2 / span 4;
+  grid-row: 1 / span 4;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     grid-column: 1 / span 3;
@@ -144,7 +148,7 @@ const TextContainer = styled.div`
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 
     @media (max-width: 768px) {
       font-size: 1rem;
